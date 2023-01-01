@@ -9,6 +9,53 @@
     <title>Portfolio</title>
 </head>
 <body>
+    <style>
+        .hello {
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 transform: translate(-50%, -50%);
+	 font-size: 25vw;
+	 animation-name: wave;
+	 animation-iteration-count: infinite;
+	 animation-timing-function: ease-in-out;
+	 font-family: "Righteous", cursive;
+	 -webkit-text-stroke-width: 3px;
+	 -webkit-text-stroke-color: black;
+     color: aliceblue;
+}
+ .hello:nth-of-type(1) {
+	 animation-duration: 2s;
+	 animation-delay: 0.55s;
+}
+ .hello:nth-of-type(2) {
+	 animation-duration: 2s;
+	 animation-delay: 0.3s;
+}
+ .hello:nth-of-type(3) {
+	 animation-duration: 2s;
+	 animation-delay: 0.05s;
+}
+ .hello:nth-of-type(4) {
+	 animation-duration: 2s;
+	 animation-delay: -0.2s;
+}
+ @keyframes wave {
+	 40%, 50% {
+		 transform: translate(-50%, -65%) scale(1.05);
+	}
+	 0%, 90%, 100% {
+		 transform: translate(-50%, -45%) scale(0.95);
+	}
+}
+ 
+    </style>
+  <div class="hello" style="color:white">TAZER</div>
+  <div class="hello" style="color:#0091ea">TAZER</div>
+  <div class="hello" style="color:#ff9100">TAZER</div>
+  <div class="hello" style="color:#ff1744">TAZER</div>
+  <div class="hello" style="color:#7c4dff">TAZER</div>
+
     <nav>
         <a href="/about" class="nav__link">
             <span class="nav__link--text" data-splitting>About Me</span>
